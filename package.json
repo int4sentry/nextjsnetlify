@@ -6,7 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@sentry/cli": "^2.19.2",
+    "@sentry/cli": "^2.18.0",
     "@sentry/nextjs": "^7.56.0",
     "next": "latest",
     "react": "18.2.0",
