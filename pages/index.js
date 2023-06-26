@@ -13,7 +13,14 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!!</a>
         </h1>
-
+        <button
+          type="button"
+          onClick={() => {
+            throw new Error("some error");
+          }}
+        >
+          some button
+        </button>
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
         </p>
