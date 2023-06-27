@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && sentry-cli sourcemaps inject .next && sentry-cli sourcemaps upload .next",
+    "build": "next build && sentry-cli sourcemaps inject .next && sentry-cli sourcemaps upload .next && rm -rf .next/**/*.map",
     "start": "next start"
   },
   "dependencies": {
