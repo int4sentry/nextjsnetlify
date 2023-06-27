@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && sentry-cli sourcemaps inject .next && sentry-cli sourcemaps upload .next --release=$COMMIT_REF --org org2-w7 --project nextjsreplay --auth-token 21a0be516db1412ea708d6a852906cd898899c4aaea348f689b824b17871fec8 && find ./.next -name \"*.map\" -delete",
+    "build": "next build && sentry-cli sourcemaps inject .next && sentry-cli sourcemaps upload .next --release=$COMMIT_REF && find ./.next -name \"*.map\" -delete",
     "delete": "find ./.next -name \"*.map\" -delete",
     "start": "next start"
   },
