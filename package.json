@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && sentry-cli sourcemaps inject .next && sentry-cli sourcemaps upload .next --release=$COMMIT_REF && find ./.next -name \"*.map\" -delete",
+    "build": "next build",
     "delete": "find ./.next -name \"*.map\" -delete",
     "start": "next start"
   },
